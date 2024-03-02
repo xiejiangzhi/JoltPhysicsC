@@ -4,6 +4,10 @@
 #ifndef _JOLT_C_H
 #define _JOLT_C_H
 
+#ifdef _MSC_VER
+  #pragma warning (disable : 4255)
+#endif
+
 #if defined(JPH_SHARED_LIBRARY_BUILD)
 #   if defined(_MSC_VER)
 #       define _JPH_EXPORT __declspec(dllexport)
